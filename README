@@ -1,29 +1,40 @@
 NAME
-    Acme::BadExample - A bad example of Perl code
+    Acme::BadExample - Perl document, yes. Perl code, no damn way!
 
   DESCRIPTION
     One of the key principles behind the PPI perl document parser is that
-    any given piece of Perl source exists in bizarre pseudo-quantum-like
-    state, in that it demonstrates both duality and indeterminism. Bear with
-    me for a second.
+    any given piece of Perl source exists in a pseudo-quantum-like state, in
+    that it demonstrates both duality and indeterminism. Bear with me for a
+    second here.
 
-    It can be treated both a Perl "document", and as Perl "code". When
-    treated as a document, it merely has to "look right", having the normal
-    context and syntax. This means that anything "cleaned" with Acme::Bleach
-    is not a valid Perl "document".
+    Any string of bytes that we consider to be "Perl" can be treated both a
+    Perl "document", and as Perl "code". When treated as a document, it
+    merely has to "look right", having the normal context and syntax. This
+    means that anything "cleaned" with Acme::Bleach is not a valid Perl
+    "document".
 
-    When treated as Perl code, there is no way to know whether it is valid
-    or not, until you look at it (i.e. until you actually execute it). In
-    fact, because every single perl installation is slightly (or
+    When treated as Perl code, there is no way to absolutely know whether it
+    is valid or not, until you look at it (i.e. until you actually execute
+    it). In fact, because every single perl installation is slightly (or
     dramatically) different, you can never truly know that something is
     valid perl code until after it's been fully parsed.
 
-    So any string of perl source can be a valid Perl document, valid Perl
-    code, or both (or neither). Most of the time, thank god, it's both.
+    Unit test frameworks in most CPAN distributions resolve 99.99% of any
+    problems, but it is theoretically possible that a module will have a
+    time-related issue or some other issue that causes it to fail to load.
+    For example, modules related to DateTime that were somehow accidentally
+    using time values that exists in the non-existant period when daylight
+    savings changes over.
+
+    So any string of Perl source can be seen as valid Perl document, as
+    valid Perl code, or both (or neither). Most of the time, thank god, it's
+    both.
 
     Acme::BadExample is intended to serve as an example of a file that is a
-    valid Perl document, but most definately not valid perl code. In fact,
-    it should not be possible to run this on any installation of perl.
+    valid Perl document and follows all the normal Perl syntax, but is most
+    definately not valid perl code. In fact, while it should not be possible
+    to run this on any installation of perl, it will happily be loaded by
+    PPI as a Perl document.
 
 SUPPORT
     You're kidding right? I tell you what. If you can find some way to make
