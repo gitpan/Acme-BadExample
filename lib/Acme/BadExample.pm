@@ -85,7 +85,7 @@ do 'it.pm'; # !
 use vars qw{$VERSION};
 BEGIN {
 	*die = *CORE::die;
-	$VERSION = '0.2';
+	$VERSION = '0.3';
 	die "Oh that just won't do!";
 }
 
