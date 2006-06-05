@@ -1,10 +1,9 @@
-require 5.000;
-use ExtUtils::MakeMaker;
-WriteMakefile(
-	'NAME'             => 'Acme::BadExample',
-	'VERSION_FROM'     => 'lib/Acme/BadExample.pm',
-	($] >= 5.005) ? (
-		'AUTHOR'   => 'Adam Kennedy<cpan@ali.as>',
-		'ABSTRACT' => 'Perl DOCUMENT, yes. Perl CODE, no damn way!',
-	) : (),
-);
+use inc::Module::Install;
+
+name           'Acme-BadExample';
+perl_version   '5.005';
+all_from       'lib/Acme/BadExample.pm';
+build_requires 'File::Spec' => '0.80';
+build_requires 'Test::More' => '0.47';
+
+WriteAll;

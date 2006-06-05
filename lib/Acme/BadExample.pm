@@ -1,5 +1,3 @@
-package Acme::BadExample;
-
 =pod
 
 =head1 NAME
@@ -22,7 +20,7 @@ When treated as Perl B<code>, there is no way to absolutely know whether it is
 valid or not, until you look at it (i.e. until you actually execute it).
 In fact, because every single perl installation is slightly (or dramatically)
 different, you can never truly know that something is valid perl code
-until B<after> it's been fully parsed.
+until B<after> its been fully parsed.
 
 Unit test frameworks in most CPAN distributions resolve 99.99% of any
 problems, but it is theoretically possible that a module will have a
@@ -59,7 +57,7 @@ of repelling the same exploit.
 
 =head1 AUTHOR
 
-Adam Kennedy (Maintainer), L<http://ali.as/>, cpan@ali.as
+Adam Kennedy E<lt>cpan@ali.asE<gt>, L<http://ali.as/>
 
 =head1 SEE ALSO
 
@@ -67,7 +65,8 @@ L<PPI|PPI>, L<PPI::Manual|PPI::Manual>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2004 Adam Kennedy. All rights reserved.
+Copyright 2004 - 2006 Adam Kennedy. All rights reserved.
+
 This program is free software; you can redistribute
 it and/or modify it under the same terms as Perl itself.
 
@@ -79,6 +78,8 @@ LICENSE file included with this module.
 # Alrighty then, with the introductions over, let's get serious.
 # To start with, lets turn a bunch of developer aids on. You've
 # got them installed right?
+
+package Acme::BadExample;
 
 use strict;
 use warnings; # Oops! You've got perl 5.6+ right?
@@ -94,7 +95,7 @@ do 'it.pm'; # !
 use vars qw{$VERSION};
 BEGIN {
 	*die = *CORE::die;
-	$VERSION = '0.5';
+	$VERSION = '1.00';
 	die "Oh that just won't do!";
 }
 
@@ -153,7 +154,7 @@ foreach ( 1 .. 50000 ) {
 my @CACHE2 = ();
 while ( 1 ) {
 	push @CACHE2, Acme::BadExample->new
-		# You've got that unreleased perl version right?
+		# You've got unreleased perl 5.10 right?
 		// die( "Failed to make that spare cache" );
 }
 

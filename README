@@ -17,7 +17,7 @@ NAME
     is valid or not, until you look at it (i.e. until you actually execute
     it). In fact, because every single perl installation is slightly (or
     dramatically) different, you can never truly know that something is
-    valid perl code until after it's been fully parsed.
+    valid perl code until after its been fully parsed.
 
     Unit test frameworks in most CPAN distributions resolve 99.99% of any
     problems, but it is theoretically possible that a module will have a
@@ -53,15 +53,16 @@ SUPPORT
     capable of repelling the same exploit.
 
 AUTHOR
-    Adam Kennedy (Maintainer), <http://ali.as/>, cpan@ali.as
+    Adam Kennedy <cpan@ali.as>, <http://ali.as/>
 
 SEE ALSO
     PPI, PPI::Manual
 
 COPYRIGHT
-    Copyright (c) 2004 Adam Kennedy. All rights reserved. This program is
-    free software; you can redistribute it and/or modify it under the same
-    terms as Perl itself.
+    Copyright 2004 - 2006 Adam Kennedy. All rights reserved.
+
+    This program is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
 
     The full text of the license can be found in the LICENSE file included
     with this module.

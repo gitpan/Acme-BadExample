@@ -1,10 +1,16 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Acme-BadExample
-version:      0.5
-version_from: lib/Acme/BadExample.pm
-installdirs:  site
-requires:
-
+abstract: 'Perl document, yes. Perl code, no damn way!'
+author: 'Adam Kennedy <cpan@ali.as>, L<http://ali.as/>'
+build_requires:
+  File::Spec: 0.80
+  Test::More: 0.47
 distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.16
+generated_by: Module::Install version 0.62
+license: perl
+name: Acme-BadExample
+no_index:
+  directory:
+    - inc
+    - t
+requires:
+  perl: 5.005
+version: 1.00
