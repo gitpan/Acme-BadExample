@@ -14,4 +14,3 @@ MANIFEST			This list of files
 META.yml
 README
 t/01_null.t
-t/99_pod.t
