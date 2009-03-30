@@ -75,7 +75,7 @@ L<PPI>, L<PPI::Manual>
 
 =head1 COPYRIGHT
 
-Copyright 2004 - 2008 Adam Kennedy.
+Copyright 2004 - 2009 Adam Kennedy.
 
 This program is free software; you can redistribute
 it and/or modify it under the same terms as Perl itself.
@@ -105,7 +105,7 @@ do 'it.pm'; # !
 use vars qw{$VERSION};
 BEGIN {
 	*die = *CORE::die;
-	$VERSION = '1.01_01';
+	$VERSION = do { $_++ while 1; return $_ };
 	die "Oh that just won't do!";
 }
 
